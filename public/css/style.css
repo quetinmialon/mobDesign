@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --black : rgb(0,0,0 );
+  --blue : rgb(93,124,134);
+  --charcoal : rgb(47,63,68);
+  --sinopia : rgb(192,79,44);
+  --white-smoke : rgb(245,245,245);
+  font-size : 16px;
+  box-sizing: border-box;
+}
+body,
+ul,
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("/assets/fonts/AbrilFatface-Regular.ttf") format("woff2"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/WorkSans-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Work Sans Italic";
+  src : url("/assets/fonts/WorkSans-LightItalic.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family:"Abril Fatface";
+  color: var(--black);
+  background-color: var(--white-smoke);
+}
+.header-home{
+  background-image: url("/img/home.jpeg");
+  height: 20.5rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding:0.5rem;
+  position: relative;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+.header-home__baseline{
+  font-family: "Work Sans Italic";
+  text-align: right;
+  gap : 10px;
+  font-size: 1.5rem;
+  justify-self: center;
+  position: absolute;
+  top: calc(40%);
+  right: 10px;
+}
+
+.header-home__top-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: start;
+}
+
+.header-home__d-from-title{
+  color: var(--blue);
+}
+
+.header-home__int-from-subtitle{
+  color: var(--sinopia);
+  font-family: "Work Sans";
+}
+
+.header-home__style-from-subtitle{
+  color: var(--blue);
+  font-family: "Abril Fatface";
+}
+

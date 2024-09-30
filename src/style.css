@@ -1,0 +1,31 @@
+:root{
+  --black : (0,0,0 )
+  --blue : (93,124,134)
+  --charcoal : (47,63,68)
+  --sinopia : (192,79,44)
+  --white-smoke : (245,245,245)
+  root-font-size : 16px;
+  box-sizing: border-box;
+}
+body,
+ul,
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@font-face {
+  .abril-fatface{
+    font-family: "Abril Fatface", serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .comic-sans-ms{
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }  
+}
+.header{
+  background-image: url(../public/img/home.jpeg);
+}

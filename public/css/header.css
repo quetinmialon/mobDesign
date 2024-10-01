@@ -1,6 +1,4 @@
-*{
-  box-sizing: border-box;
-}
+@import '../node_modules/the-new-css-reset/css/reset.css';
 
 :root{
   --black : rgb(0,0,0 );
@@ -11,13 +9,7 @@
   font-size : 16px;
   box-sizing: border-box;
 }
-body,
-ul,
-h1,h2,h3,h4,h5,h6{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
+
 @font-face {
   font-family: "Abril Fatface";
   src: url("/assets/fonts/AbrilFatface-Regular.ttf") format("woff2"); 
@@ -32,34 +24,35 @@ h1,h2,h3,h4,h5,h6{
   font-style: normal;
 }
 @font-face{
-  font-family: "Work Sans Italic";
+  font-family: "Work Sans";
   src : url("/assets/fonts/WorkSans-LightItalic.ttf") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 200;
+  font-style: italic;
 }
-
 body {
   font-family:"Abril Fatface";
   color: var(--black);
   background-color: var(--white-smoke);
 }
+
 .header-home{
   background-image: url("/img/home.jpeg");
   height: 20.5rem;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  padding:0.5rem;
   position: relative;
 }
 
-h1{
+.h1{
   font-size: 2.5rem;
 }
 
 .header-home__baseline{
-  font-family: "Work Sans Italic";
+  font-family: "Work Sans";
   text-align: right;
+  font-weight: 200;
+  font-style: italic;
   gap : 10px;
   font-size: 1.5rem;
   justify-self: center;
@@ -73,6 +66,11 @@ h1{
   flex-direction: row;
   justify-content: space-between;
   justify-self: start;
+  padding: 1rem;
+}
+
+.header__burger-menu{
+  cursor: pointer;
 }
 
 .header-home__d-from-title{

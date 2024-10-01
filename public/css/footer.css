@@ -1,0 +1,80 @@
+@import '../node_modules/the-new-css-reset/css/reset.css';
+
+:root{
+  --black : rgb(0,0,0 );
+  --blue : rgb(93,124,134);
+  --charcoal : rgb(47,63,68);
+  --sinopia : rgb(192,79,44);
+  --white-smoke : rgb(245,245,245);
+  font-size : 16px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("/assets/fonts/AbrilFatface-Regular.ttf") format("woff2"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/WorkSans-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Work Sans";
+  src : url("/assets/fonts/WorkSans-LightItalic.ttf") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue);
+    gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.top-part-container__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap : 2rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Work Sans';
+}
+.bottom__tpc-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Work Sans';
+}
+.bottom-container__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.logo__footer{
+    font-size: 2rem;
+    font-family: 'Abril Fatface';
+    color : black;
+}
+.d-from-logo__footer{
+    color: white;
+}
+.icons-container__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap : 2rem;
+}

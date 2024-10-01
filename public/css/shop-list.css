@@ -1,0 +1,91 @@
+@import '../node_modules/the-new-css-reset/css/reset.css';
+
+
+:root{
+  --black : rgb(0,0,0 );
+  --blue : rgb(93,124,134);
+  --charcoal : rgb(47,63,68);
+  --sinopia : rgb(192,79,44);
+  --white-smoke : rgb(245,245,245);
+  font-size : 16px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("/assets/fonts/AbrilFatface-Regular.ttf") format("woff2"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/WorkSans-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Work Sans";
+  src : url("/assets/fonts/WorkSans-LightItalic.ttf") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+
+.shop-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.article__shop-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    border-bottom: 0.5rem solid var(--white-smoke);
+    border-right: 0.5rem solid var(--white-smoke);
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.image__article-shop-list{
+    width: 15.5rem;
+    height: 15.5rem;
+    
+}
+.center-container__article-shop-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;   
+    gap: 1,5rem;
+}
+.title-and-category-container__article-shop-list{
+    max-width: 11.5rem;
+}
+.title__article-shop-list{
+    font-family: 'Abril Fatface';
+    font-size: 2rem;
+}
+.category__article-shop-list{
+    font-family: 'Work Sans';
+    color: var(--blue);
+}
+.price__article-shop-list{
+    color: var(--sinopia);
+    font-family: 'Abril Fatface';
+    font-size: 2rem;
+}
+.cents__article-shop-list{
+    font-size: 1.25rem;
+}
+.description__article-shop-list{
+    font-family: 'Work Sans';
+}

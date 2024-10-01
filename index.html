@@ -3,27 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/shop-list.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>mobdesign</title>
   </head>
   <body>
-    <header class = header-home >
-      <nav class="header-home__top-bar">
-        <H1>Mob<span class="header-home__d-from-title">D</span>esign</H1>
-        <img src="/assets/icons/Burger.svg" alt="menu burger">
-      </nav>
+    <div class = header-home >
+      <header class="header-home__top-bar">
+        <H1 class = "h1">Mob<span class="header-home__d-from-title">D</span>esign</H1>
+        <button class="header__burger-menu" type="button" aria-label="open navigation menu"><img src="/assets/icons/Burger.svg" alt="menu Burger"></button>
+      </header>
       <p class="header-home__baseline">
         Votre <span class="header-home__int-from-subtitle">intérieur</span> <br> réinventé avec <span class="header-home__style-from-subtitle"> style </span>
       </p>  
-    </header>
-    <div class="shared__banner">
-
     </div>
-    <section>
+    <div class="shared__banner">
+      Nos dernières nouveautés
+    </div>
+    <template id="template__shop-list">
+      <article class ="shop-list">
+        <img src="" alt="" class="image__shop-list">
+        <div class="center-container__shop-listy">
+          <div class="title-and-category-container__shop-list">
+            <h2 class="title__shop-list">
 
+            </h2>
+            <p class="category__shop-list">
+
+            </p>
+          </div>
+        <p class="price__shop-list">
+
+        </p>
+      </div>
+      <p class="description__shop-list">
+
+      </p>
+      <button class="shared__button">
+        Découvrir
+      </button>
+      </article>
+    </template>
+
+    <section id="shop-list" class="shop-list">    
+      <article class ="article__shop-list">
+        <img src="./public/img/sofa-nordique-1.jpg" alt="sofa nordique" class="image__article-shop-list">
+        <div class="center-container__article-shop-list">
+          <div class="title-and-category-container__article-shop-list">
+            <h2 class="title__article-shop-list">
+              Sofa Nordique
+            </h2>
+            <p class="category__article-shop-list">
+              Canapés et fauteuils
+            </p>
+          </div>
+        <p class="price__article-shop-list">
+          899 € <span class="cents__article-shop-list">99</span>
+        </p>
+      </div>
+      <p class="description__article-shop-list">
+        Confortable sofa au design scandinave, parfait pour vos moments de détente.
+      </p>
+      <button class="shared__button-blue-text-white">
+        Découvrir
+      </button>
+      </article>
+      <article class ="article__shop-list">
+        <img src="./public/img/sofa-nordique-1.jpg" alt="sofa nordique" class="image__article-shop-list">
+        <div class="center-container__article-shop-list">
+          <div class="title-and-category-container__article-shop-list">
+            <h2 class="title__article-shop-list">
+              Chaise Oslo
+            </h2>
+            <p class="category__article-shop-list">
+              Canapés et fauteuils
+            </p>
+          </div>
+        <p class="price__article-shop-list">
+          899 € <span class="cents__article-shop-list">99</span>
+        </p>
+      </div>
+      <p class="description__article-shop-list">
+        Confortable sofa au design scandinave, parfait pour vos moments de détente.
+      </p>
+      <button class="shared__button-blue-text-white">
+        Découvrir
+      </button>
+      </article>
     </section>
-    <footer>
-      
+    <footer class="footer">
+      <div class="top-part-container__footer">
+        <p>Qui sommes nous ?</p>
+        <div class="bottom__tpc-footer">
+          <p>Mentions légales</p>
+          <p>CGV</p>
+        </div>
+      </div>
+      <div class="bottom-container__footer">
+        <p class="logo__footer">Mob<span class="d-from-logo__footer">D</span>esign</p>
+        <div class="icons-container__footer">
+          <img src="/assets/icons/insta.svg" alt="icone instagram">
+          <img src="/assets/icons/tiktok.svg" alt="icone tik tok">
+          <img src="/assets/icons/mastodon.svg" alt="icone mastodon">
+        </div>
+      </div>
     </footer>
   </body>
 </html>

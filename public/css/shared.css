@@ -1,0 +1,59 @@
+@import '../node_modules/the-new-css-reset/css/reset.css';
+
+
+:root{
+  --black : rgb(0,0,0 );
+  --blue : rgb(93,124,134);
+  --charcoal : rgb(47,63,68);
+  --sinopia : rgb(192,79,44);
+  --white-smoke : rgb(245,245,245);
+  font-size : 16px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("/assets/fonts/AbrilFatface-Regular.ttf") format("woff2"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/WorkSans-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Work Sans";
+  src : url("/assets/fonts/WorkSans-LightItalic.ttf") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+body {
+    font-family:"Abril Fatface";
+    color: var(--black);
+    background-color: var(--white-smoke);
+}
+.shared__banner{
+    color : var(--white-smoke);
+    background-color: var(--blue);
+    padding : 1rem;
+    gap : 10px;
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: center;
+}
+.shared__button-blue-text-white{
+    color : var(--white-smoke);
+    background-color: var(--blue);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}

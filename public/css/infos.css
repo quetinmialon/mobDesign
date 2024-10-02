@@ -30,33 +30,17 @@
   font-weight: 200;
   font-style: italic;
 }
-body {
-    font-family:"Abril Fatface";
-    color: var(--black);
-    background-color: var(--white-smoke);
-}
-.shared__banner{
-    color : var(--white-smoke);
-    background-color: var(--blue);
-    padding : 1rem;
-    gap : 10px;
-    font-size: 2.5rem;
-    text-align: center;
-    align-items: center;
-}
-.shared__banner.not-first{
-  margin-bottom: 2rem;
-}
-.shared__button-blue-text-white{
-    color : var(--white-smoke);
-    background-color: var(--blue);
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+
+.main{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    gap: 10px;
-    text-align: center;
+    gap: 2rem;
+    font-family: 'Work Sans';
+    font-size: 1rem;
+}
+.subtitle{
     font-size: 1.5rem;
+    padding: 2rem;
 }

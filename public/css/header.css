@@ -1,4 +1,4 @@
-@import '../node_modules/the-new-css-reset/css/reset.css';
+@import '/../node_modules/the-new-css-reset/css/reset.css';
 
 :root{
   --black : rgb(0,0,0 );
@@ -61,14 +61,33 @@ body {
   right: 10px;
 }
 
+.header-home__baseline.blured{
+  filter: blur(2px);
+}
+
 .header-home__top-bar{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  justify-self: start;
   padding: 1rem;
+  position: sticky;
+  top: 0;
+  transition :all 0.3s ease-in-out;
 }
 
+.header-home__top-bar.fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--white-smoke);
+}
+
+.header-home__top-bar.white-smoke{
+  background-color: var(--white-smoke);
+  transition: none;
+}
 .header__burger-menu{
   cursor: pointer;
 }
@@ -87,3 +106,44 @@ body {
   font-family: "Abril Fatface";
 }
 
+.class-list{
+  position: absolute;
+}
+
+.nav-list{
+  background-color: var(--white-smoke);
+  position: fixed;
+  top : 5rem;
+  width : 100%;
+  border-bottom: 0.5rem solid var(--sinopia);
+  z-index: 5;
+  padding-bottom: 1.5rem;
+}
+
+.nav-list__item{
+  padding: 1rem;
+  gap: 2px;
+  font-family: 'Work Sans';
+  color: var(--black);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.selected{
+  border-bottom: 2px solid var(--sinopia);
+  width: auto;
+  max-width: min-content;
+}
+.header__top-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--white-smoke);
+}

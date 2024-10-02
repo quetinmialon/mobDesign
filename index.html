@@ -7,14 +7,23 @@
     <link rel="stylesheet" href="./css/shared.css">
     <link rel="stylesheet" href="./css/shop-list.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <script type="module" src="./js/burger-menu.js"></script>
     <title>mobdesign</title>
   </head>
   <body>
     <div class = header-home >
-      <header class="header-home__top-bar">
+      <header class="header-home__top-bar" >
         <H1 class = "h1">Mob<span class="header-home__d-from-title">D</span>esign</H1>
-        <button class="header__burger-menu" type="button" aria-label="open navigation menu"><img src="/assets/icons/Burger.svg" alt="menu Burger"></button>
+        <button id="menu-burger" class="header__burger-menu" type="button" aria-label="open navigation menu"><img id="menu-icon" src="/assets/icons/Burger.svg" alt="menu Burger"></button>
       </header>
+      <nav class="nav-list" hidden id="menu">
+        <ul >
+          <li class="nav-list__item"><a href=""><p class="selected">Accueil</p></a></li>
+          <li class="nav-list__item"><a href="">Canapés</a></li>
+          <li class="nav-list__item"><a href="">Décoration</a></li>
+          <li class="nav-list__item"><a href="">Mes coups de coeur</a></li>
+        </ul>
+      </nav>
       <p class="header-home__baseline">
         Votre <span class="header-home__int-from-subtitle">intérieur</span> <br> réinventé avec <span class="header-home__style-from-subtitle"> style </span>
       </p>  
@@ -49,7 +58,7 @@
 
     <section id="shop-list" class="shop-list">    
       <article class ="article__shop-list">
-        <img src="./public/img/sofa-nordique-1.jpg" alt="sofa nordique" class="image__article-shop-list">
+        <img src="/img/sofa-nordique-1.jpg" alt="sofa nordique" class="image__article-shop-list">
         <div class="center-container__article-shop-list">
           <div class="title-and-category-container__article-shop-list">
             <h2 class="title__article-shop-list">
@@ -71,7 +80,7 @@
       </button>
       </article>
       <article class ="article__shop-list">
-        <img src="./public/img/sofa-nordique-1.jpg" alt="sofa nordique" class="image__article-shop-list">
+        <img src="/img/sofa-nordique-1.jpg" alt="sofa nordique" class="image__article-shop-list">
         <div class="center-container__article-shop-list">
           <div class="title-and-category-container__article-shop-list">
             <h2 class="title__article-shop-list">
@@ -95,10 +104,10 @@
     </section>
     <footer class="footer">
       <div class="top-part-container__footer">
-        <p>Qui sommes nous ?</p>
+        <a href="/infos.html"><p>Qui sommes nous ?</p></a>
         <div class="bottom__tpc-footer">
-          <p>Mentions légales</p>
-          <p>CGV</p>
+          <a href="/infos.html"><p>Mentions légales</p></a>
+          <a href="/infos.html"><p>CGV</p></a>
         </div>
       </div>
       <div class="bottom-container__footer">

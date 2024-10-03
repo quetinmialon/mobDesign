@@ -11,7 +11,7 @@ export default class Product{
         this.date = date;
     }
 
-    getPriceInEuro() {
+    changeIntPriceIntoEurosAndCentsInt() {
         const  [int, decimal] = this.price.toFixed(2).split('.');
         return [int, decimal];
     }
@@ -27,9 +27,9 @@ export default class Product{
     }
 
     getEuro(){
-        return `${this.getPriceInEuro()[0]}€`
+        return `${this.changeIntPriceIntoEurosAndCentsInt()[0]}€`
     }
     getCent(){
-        return this.getPriceInEuro()[1]
+        return this.changeIntPriceIntoEurosAndCentsInt()[1]
     }
 }

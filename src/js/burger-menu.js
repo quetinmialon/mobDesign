@@ -1,4 +1,5 @@
 export function handleMenuBurgerInteractions(){
+    // get the header height, check if the scroll Y position is lower than it and change bg color accordingly
     window.addEventListener('scroll', function() {
         const header = document.querySelector('.header')
         if (!header) return;
@@ -12,6 +13,7 @@ export function handleMenuBurgerInteractions(){
         } 
         header.classList.remove('fixed');
     });
+    // add a blure filter when scroll Y 
     window.addEventListener('scroll',function() {
         const header = document.querySelector('.hero-header__baseline')
         if(!header) {
@@ -23,10 +25,8 @@ export function handleMenuBurgerInteractions(){
         }
         header.classList.remove('blured')
     });
-
-    const burgerMenu= document.getElementById('menu-burger')
-
-    burgerMenu.addEventListener('click', function(){
+    // check if navigation is open or not by checking if attribute hidden is here or not and swap it accordingly
+    document.getElementById('menu-burger').addEventListener('click', function(){
         const menu = document.getElementById('menu')
         const icon = document.getElementById('menu-icon')
         if(!menu){
@@ -50,6 +50,8 @@ export function handleMenuBurgerInteractions(){
     });
 }
 
+
+//check if classlist contain white smoke or no and toggle it accordingly
 function toggleBackgroundHeaderWhite(){
     const header = document.querySelector('.header')
     if(!header){

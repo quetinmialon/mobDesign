@@ -1,0 +1,40 @@
+.nav{
+    background-color: var(--white-smoke);
+    position: fixed;
+    top : 5rem;
+    width : 100%;
+    border-bottom: 0.5rem solid var(--sinopia);
+    z-index: 5;
+    padding-bottom: 1.5rem;
+}
+  
+.nav__items{
+    padding: 1rem;
+    gap: 2px;
+    font-family: 'Work Sans';
+    color: var(--black);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+  
+.nav__selected{
+    border-bottom: 2px solid var(--sinopia);
+    width: auto;
+    max-width: min-content;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .header__nav{
+    display: inline;  
+  }
+  .nav__items{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: 1.25rem;
+    font-family: 'Work Sans';
+  }
+}

@@ -6,7 +6,7 @@ body {
   flex-direction: column;
 }
 
-.header-home{
+.hero-header{
   background-image: url("/img/home.jpeg");
   background-position: center center;
   height: 20.5rem;
@@ -15,17 +15,14 @@ body {
   flex-direction: column;
   position: relative;
 }
-.header__menu-desktop{
+.header__nav{
   display: none;
 }
-
-
-
-.h1{
+.header__title{
   font-size: 2.5rem;
 }
 
-.header-home__baseline{
+.hero-header__baseline{
   font-family: "Work Sans";
   text-align: right;
   font-style: italic;
@@ -37,11 +34,11 @@ body {
   right: 10px;
 }
 
-.header-home__baseline.blured{
+.hero-header__baseline.blured{
   filter: blur(2px);
 }
 
-.header-home__top-bar{
+.header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -52,7 +49,7 @@ body {
   transition :all 0.3s ease-in-out;
 }
 
-.header-home__top-bar.fixed{
+.header.fixed{
   position: fixed;
   top: 0;
   width: 100%;
@@ -61,7 +58,7 @@ body {
   background-color: var(--white-smoke);
 }
 
-.header-home__top-bar.white-smoke{
+.header.white-smoke{
   background-color: var(--white-smoke);
   transition: none;
 }
@@ -69,49 +66,20 @@ body {
   cursor: pointer;
 }
 
-.header-home__d-from-title{
+.header__title-letter{
   color: var(--blue);
 }
 
-.header-home__int-from-subtitle{
+.hero-header__word--int{
   color: var(--sinopia);
   font-family: "Work Sans";
 }
 
-.header-home__style-from-subtitle{
+.hero-header__word--style{
   color: var(--blue);
   font-family: "Abril Fatface";
 }
 
-.class-list{
-  position: absolute;
-}
-
-.nav-list{
-  background-color: var(--white-smoke);
-  position: fixed;
-  top : 5rem;
-  width : 100%;
-  border-bottom: 0.5rem solid var(--sinopia);
-  z-index: 5;
-  padding-bottom: 1.5rem;
-}
-
-.nav-list__item{
-  padding: 1rem;
-  gap: 2px;
-  font-family: 'Work Sans';
-  color: var(--black);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-.selected{
-  border-bottom: 2px solid var(--sinopia);
-  width: auto;
-  max-width: min-content;
-}
 .header__top-bar{
   display: flex;
   flex-direction: row;
@@ -127,23 +95,13 @@ body {
 
 @media screen and (min-width: 768px) {
 
-  .header-home{
+  .hero-header{
     height : 50rem;
   }
-  .header-home__baseline{
+  .hero-header__baseline{
     font-size: 3rem;
   }
   .header__burger-menu{
     display: none;
-  }
-  .header__menu-desktop{
-    display: inline;  
-  }
-  .items__menu-desktop{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    font-size: 1.25rem;
-    font-family: 'Work Sans';
   }
 }

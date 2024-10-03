@@ -1,8 +1,8 @@
 export function handleMenuBurgerInteractions(){
     window.addEventListener('scroll', function() {
-        const header = document.querySelector('.header-home__top-bar')
+        const header = document.querySelector('.header')
         if (!header) return;
-        const headerHome = document.querySelector('.header-home')
+        const headerHome = document.querySelector('.hero-header')
         if (!headerHome) return;
         const headerHomeHeight = headerHome.offsetHeight;
         const headerHomeTopBarHeight = header.offsetHeight;
@@ -13,7 +13,7 @@ export function handleMenuBurgerInteractions(){
         header.classList.remove('fixed');
     });
     window.addEventListener('scroll',function() {
-        const header = document.querySelector('.header-home__baseline')
+        const header = document.querySelector('.hero-header__baseline')
         if(!header) {
             return
         }
@@ -51,7 +51,7 @@ export function handleMenuBurgerInteractions(){
 }
 
 function toggleBackgroundHeaderWhite(){
-    const header = document.querySelector('.header-home__top-bar')
+    const header = document.querySelector('.header')
     if(!header){
         return;
     }

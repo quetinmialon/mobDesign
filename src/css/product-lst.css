@@ -1,0 +1,19 @@
+.product-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+@media screen and (min-width : 768px) {
+    .product-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

@@ -12,8 +12,8 @@ export default class Product{
     }
 
     getPriceInEuro() {
-        const [int, decimal] = this.price.toFixed(2).split('.');
-        return `${int}€${decimal}`
+        const  [int, decimal] = this.price.toFixed(2).split('.');
+        return [int, decimal];
     }
 
     getTimestamp() {
@@ -24,5 +24,12 @@ export default class Product{
             return;
         }
         return `/img/${this.img.split('/').pop()}`;
+    }
+
+    getEuro(){
+        return `${this.getPriceInEuro()[0]}€`
+    }
+    getCent(){
+        return this.getPriceInEuro()[1]
     }
 }

@@ -1,17 +1,4 @@
-.shop-list{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-
-}
-.article__shop-list{
+.product-card{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -23,50 +10,47 @@
     justify-content: center;
     align-items: center;
 }
-.image__article-shop-list{
+.product-card__img{
     width: 15.5rem;
     height: 15.5rem;
     
 }
-.center-container__article-shop-list{
+.product-card__txt{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;   
     gap: 1,5rem;
 }
-.title-and-category-container__article-shop-list{
+.product-card_ttl-cat{
     max-width: 11.5rem;
 }
-.title__article-shop-list{
+.product-card__ttl{
     font-family: 'Abril Fatface';
     font-size: 2rem;
 }
-.category__article-shop-list{
+.product-card__ttl{
     font-family: 'Work Sans';
     color: var(--blue);
 }
-.price__article-shop-list{
+.product-card__price{
     color: var(--sinopia);
     font-family: 'Abril Fatface';
     font-size: 2rem;
     margin-left: 1rem;
 }
-.cents__article-shop-list{
+.product-card__cent{
     font-size: 1.25rem;
 }
-.description__article-shop-list{
+.product-card__dsc{
     font-family: 'Work Sans';
 }
 @media screen and (min-width : 768px) {
-    .shop-list{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .article__shop-list{
+
+    .product-card{
         width: 20rem;
     }
-    .title-and-category-container__article-shop-list{
+    .product-card_ttl-cat{
         max-width: 8rem;
     }
 }

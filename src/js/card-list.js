@@ -21,16 +21,17 @@ async function getLastProducts(x) {
 function hydrateTemplate(product) {
     const template = document.getElementById('template__shop-list').content;
     const clone = document.importNode(template, true);
-    clone.querySelector('.image__article-shop-list').src = product.getRelativeImageUrl();
-    clone.querySelector('.image__article-shop-list').alt = product.title;
-    clone.querySelector('.title__article-shop-list').textContent = product.title;
-    clone.querySelector('.category__article-shop-list').textContent = product.category;
-    clone.querySelector('.price__article-shop-list').textContent = product.getPriceInEuro();
-    clone.querySelector('.description__article-shop-list').textContent = product.description;
-    clone.querySelector('.shared__button-blue-text-white').onclick = () => {
+    clone.querySelector('.product-card__img').src = product.getRelativeImageUrl();
+    clone.querySelector('.product-card__img').alt = product.title;
+    clone.querySelector('.product-card__ttl').textContent = product.title;
+    clone.querySelector('.product-card__cat').textContent = product.category;
+    clone.querySelector('.product-card__price').childNodes[0].textContent = product.getEuro();
+    clone.querySelector('.product-card__cent').textContent = product.getCent();    
+    clone.querySelector('.product-card__dsc').textContent = product.description;
+    clone.querySelector('.button--blue-text-white').onclick = () => {
         window.location.href = product.url;
     };
-    document.querySelector('.shop-list').appendChild(clone);
+    document.querySelector('.product-list').appendChild(clone);
 }
 
 //recupère les données du json et le transforme en un tableau d'objet Product

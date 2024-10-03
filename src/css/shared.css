@@ -3,7 +3,7 @@ body {
     color: var(--black);
     background-color: var(--white-smoke);
 }
-.shared__banner{
+.banner{
     color : var(--white-smoke);
     background-color: var(--blue);
     padding : 1rem;
@@ -12,10 +12,10 @@ body {
     text-align: center;
     align-items: center;
 }
-.shared__banner.not-first{
+.banner.not-first{
   margin-bottom: 2rem;
 }
-.shared__button-blue-text-white{
+.button--blue-text-white{
     color : var(--white-smoke);
     background-color: var(--blue);
     padding-bottom: 0.5rem;

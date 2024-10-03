@@ -9,4 +9,4 @@ async function main(int){
     handleMenuBurgerInteractions();  
 }
 
-main(4);
+main(8);

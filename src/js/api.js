@@ -1,6 +1,6 @@
 export async function fetchData(){
     try {
-        const response = await fetch('/product.json');
+        const response = await fetch('/src/datas/product.json');
         if (!response.ok) {
             throw new Error(`Erreur HTTP : ${response.status}`);
         }

@@ -21,13 +21,13 @@ async function getLastProducts(x) {
 function hydrateTemplate(product) {
     const template = document.getElementById('template__shop-list').content;
     const clone = document.importNode(template, true);
-    clone.querySelector('.image__shop-list').src = product.getRelativeImageUrl();
-    clone.querySelector('.image__shop-list').alt = product.title;
-    clone.querySelector('.title__shop-list').textContent = product.title;
-    clone.querySelector('.category__shop-list').textContent = product.category;
-    clone.querySelector('.price__shop-list').textContent = product.getPriceInEuro();
-    clone.querySelector('.description__shop-list').textContent = product.description;
-    clone.querySelector('.shared__button').onclick = () => {
+    clone.querySelector('.image__article-shop-list').src = product.getRelativeImageUrl();
+    clone.querySelector('.image__article-shop-list').alt = product.title;
+    clone.querySelector('.title__article-shop-list').textContent = product.title;
+    clone.querySelector('.category__article-shop-list').textContent = product.category;
+    clone.querySelector('.price__article-shop-list').textContent = product.getPriceInEuro();
+    clone.querySelector('.description__article-shop-list').textContent = product.description;
+    clone.querySelector('.shared__button-blue-text-white').onclick = () => {
         window.location.href = product.url;
     };
     document.querySelector('.shop-list').appendChild(clone);

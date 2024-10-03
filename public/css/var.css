@@ -1,0 +1,29 @@
+:root{
+    --black : rgb(0,0,0 );
+    --blue : rgb(93,124,134);
+    --charcoal : rgb(47,63,68);
+    --sinopia : rgb(192,79,44);
+    --white-smoke : rgb(245,245,245);
+    font-size : 16px;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: "Abril Fatface";
+    src: url("/assets/fonts/AbrilFatface-Regular.ttf") format("woff2"); 
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Work Sans";
+    src: url("/assets/fonts/WorkSans-Regular.ttf") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face{
+    font-family: "Work Sans";
+    src : url("/assets/fonts/WorkSans-LightItalic.ttf") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+  }

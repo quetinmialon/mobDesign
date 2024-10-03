@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/shared.css">
-    <link rel="stylesheet" href="./css/shop-list.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <script type="module" src="./js/burger-menu.js"></script>
+    <script type="module" src="/main.js"></script>
     <title>mobdesign</title>
   </head>
   <body>
@@ -15,10 +11,18 @@
       <header class="header-home__top-bar" >
         <H1 class = "h1">Mob<span class="header-home__d-from-title">D</span>esign</H1>
         <button id="menu-burger" class="header__burger-menu" type="button" aria-label="open navigation menu"><img id="menu-icon" src="/assets/icons/Burger.svg" alt="menu Burger"></button>
+        <nav class="header__menu-desktop">
+          <ul class="items__menu-desktop">
+            <li><a href="/index.html"><p class="selected">Accueil</p></a></li>
+            <li><a href="">Canapés</a></li>
+            <li><a href="">Décoration</a></li>
+            <li><a href="">Mes coups de coeur</a></li>
+          </ul>
+        </nav>
       </header>
       <nav class="nav-list" hidden id="menu">
         <ul >
-          <li class="nav-list__item"><a href=""><p class="selected">Accueil</p></a></li>
+          <li class="nav-list__item"><a href="/index.html"><p class="selected">Accueil</p></a></li>
           <li class="nav-list__item"><a href="">Canapés</a></li>
           <li class="nav-list__item"><a href="">Décoration</a></li>
           <li class="nav-list__item"><a href="">Mes coups de coeur</a></li>
@@ -101,13 +105,57 @@
         Découvrir
       </button>
       </article>
+      <article class ="article__shop-list">
+        <img src="/img/sofa-nordique-1.jpg" alt="sofa nordique" class="image__article-shop-list">
+        <div class="center-container__article-shop-list">
+          <div class="title-and-category-container__article-shop-list">
+            <h2 class="title__article-shop-list">
+              Sofa Nordique
+            </h2>
+            <p class="category__article-shop-list">
+              Canapés et fauteuils
+            </p>
+          </div>
+        <p class="price__article-shop-list">
+          899 € <span class="cents__article-shop-list">99</span>
+        </p>
+      </div>
+      <p class="description__article-shop-list">
+        Confortable sofa au design scandinave, parfait pour vos moments de détente.
+      </p>
+      <button class="shared__button-blue-text-white">
+        Découvrir
+      </button>
+      </article>
+      <article class ="article__shop-list">
+        <img src="/img/sofa-nordique-1.jpg" alt="sofa nordique" class="image__article-shop-list">
+        <div class="center-container__article-shop-list">
+          <div class="title-and-category-container__article-shop-list">
+            <h2 class="title__article-shop-list">
+              Chaise Oslo
+            </h2>
+            <p class="category__article-shop-list">
+              Canapés et fauteuils
+            </p>
+          </div>
+        <p class="price__article-shop-list">
+          899 € <span class="cents__article-shop-list">99</span>
+        </p>
+      </div>
+      <p class="description__article-shop-list">
+        Confortable sofa au design scandinave, parfait pour vos moments de détente.
+      </p>
+      <button class="shared__button-blue-text-white">
+        Découvrir
+      </button>
+      </article>
     </section>
     <footer class="footer">
       <div class="top-part-container__footer">
         <a href="/infos.html"><p>Qui sommes nous ?</p></a>
         <div class="bottom__tpc-footer">
-          <a href="/infos.html"><p>Mentions légales</p></a>
-          <a href="/infos.html"><p>CGV</p></a>
+          <a href="/infos.html"><p class="bottom__tpc-footer-content">Mentions légales</p></a>
+          <a href="/infos.html"><p class="bottom__tpc-footer-content">CGV</p></a>
         </div>
       </div>
       <div class="bottom-container__footer">

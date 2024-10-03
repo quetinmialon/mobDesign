@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/shared.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/infos.css">
-    <script type= "module" src="/js/burger-menu.js" defer></script>
+    <script type= "module" src="/main.js" defer></script>
     <title>Infos Utiles</title>
 </head>
 <body>
 <header class="header__top-bar" >
     <H1 class = "h1">Mob<span class="header-home__d-from-title">D</span>esign</H1>
     <button id="menu-burger" class="header__burger-menu" type="button" aria-label="open navigation menu"><img id="menu-icon" src="/assets/icons/Burger.svg" alt="menu Burger"></button>
+    <nav class="header__menu-desktop">
+        <ul class="items__menu-desktop">
+          <li><a href="/index.html"><p class="selected">Accueil</p></a></li>
+          <li><a href="">Canapés</a></li>
+          <li><a href="">Décoration</a></li>
+          <li><a href="">Mes coups de coeur</a></li>
+        </ul>
+      </nav>
 </header>
 <nav class="nav-list" hidden id="menu">
 <ul >
@@ -50,8 +54,8 @@
     <div class="top-part-container__footer">
       <a href="/infos.html"><p>Qui sommes nous ?</p></a>
       <div class="bottom__tpc-footer">
-        <a href="/infos.html"><p>Mentions légales</p></a>
-        <a href="/infos.html"><p>CGV</p></a>
+        <a href="/infos.html"><p class="bottom__tpc-footer-content">Mentions légales</p></a>
+        <a href="/infos.html"><p class="bottom__tpc-footer-content">CGV</p></a>
       </div>
     </div>
     <div class="bottom-container__footer">
@@ -62,6 +66,6 @@
         <img src="/assets/icons/mastodon.svg" alt="icone mastodon">
       </div>
     </div>
-</footer>
+  </footer>
 </body>
 </html>

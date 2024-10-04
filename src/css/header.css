@@ -1,5 +1,5 @@
 .hero-header{
-  background-image: url("/img/home.jpeg");
+  background-image: url("/img/home.webp");
   background-position: center center;
   height: 20.5rem;
   background-size: cover;
@@ -7,6 +7,17 @@
   flex-direction: column;
   position: relative;
 }
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  transition :all 0.3s ease-in-out;
+}
+
 .header__nav{
   display: none;
 }
@@ -30,16 +41,6 @@
   filter: blur(2px);
 }
 
-.header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  transition :all 0.3s ease-in-out;
-}
 
 .header.fixed{
   position: fixed;

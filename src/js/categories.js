@@ -36,7 +36,7 @@ function hydrateCategories(categories) {
         const formattedCategory = formatCategory(category);
         const imgElement = clone.querySelector(".card__img");
         const titleElement = clone.querySelector(".card__ttl");
-        imgElement.src = `/img/${formattedCategory}.png`;
+        imgElement.src = `/img/${formattedCategory}.webp`;
         imgElement.alt = category;
         titleElement.textContent = category; 
         ulElement.appendChild(clone);

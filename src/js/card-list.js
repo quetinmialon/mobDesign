@@ -1,8 +1,7 @@
 import Product from "./entities/Product";
 import { fetchData } from "./api";
-
 //get json datas and transform it into an array of objects Product
-async function getProducts(){
+export async function getProducts(){
     const data = await fetchData();
     return data.map(element => {
         return new Product(

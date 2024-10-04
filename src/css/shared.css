@@ -1,7 +1,9 @@
 body {
     font-family:"Abril Fatface";
     color: var(--black);
-    background-color: var(--white-smoke);
+    display: flex;
+    flex-direction: column;
+    background-color: white
 }
 .banner{
     color : var(--white-smoke);

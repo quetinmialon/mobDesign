@@ -32,9 +32,54 @@
         Votre <span class="hero-header__word--int">intérieur</span> <br> réinventé avec <span class="hero-header__word--style"> style </span>
       </p>  
     </div>
+    <section class="categories">
+      <!-- L'arrière-plan ici -->
+      <div class="categories__background"></div>
+  
+      <!-- Contenu texte -->
+      <div class="categories__txt">
+          <h2 class="categories__ttl">Notre collection</h2>
+          <p class="categories__dsc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eveniet sunt assumenda tempore error cupiditate animi esse vel minima cum.
+          </p>
+      </div>
+  
+      <!-- Liste des cartes -->
+      <div class="categories__lst">
+          <ul class="categories__card">
+            
+          </ul>
+      </div>
+  </section>
     <div class="banner">
       Nos dernières nouveautés
     </div>
+    <section id="product-list" class="product-list">
+    </section>
+    <footer class="footer">
+      <div class="footer__nav">
+        <a href="/infos.html"><p>Qui sommes nous ?</p></a>
+        <div class="footer__nav--bis">
+          <a href="/infos.html"><p class="footer__link">Mentions légales</p></a>
+          <a href="/infos.html"><p class="footer__link">CGV</p></a>
+        </div>
+      </div>
+      <div class="footer__social">
+        <p class="footer__logo">Mob<span class="footer__logo-letter">D</span>esign</p>
+        <div class="footer__icons">
+          <img src="/assets/icons/insta.svg" alt="icone instagram">
+          <img src="/assets/icons/tiktok.svg" alt="icone tik tok">
+          <img src="/assets/icons/mastodon.svg" alt="icone mastodon">
+        </div>
+      </div>
+    </footer>
+
+    <template class="js-categories__card">
+      <li class="card">
+          <img src="" alt="" class="card__img">
+          <h3 class="card__ttl"></h3>
+      </li>
+    </template>
     <template id="template__shop-list">
       <article class ="product-card">
         <img src="" alt="" class="product-card__img">
@@ -59,25 +104,5 @@
       </button>
       </article>
     </template>
-
-    <section id="product-list" class="product-list">    
-    </section>
-    <footer class="footer">
-      <div class="footer__nav">
-        <a href="/infos.html"><p>Qui sommes nous ?</p></a>
-        <div class="footer__nav--bis">
-          <a href="/infos.html"><p class="footer__link">Mentions légales</p></a>
-          <a href="/infos.html"><p class="footer__link">CGV</p></a>
-        </div>
-      </div>
-      <div class="footer__social">
-        <p class="footer__logo">Mob<span class="footer__logo-letter">D</span>esign</p>
-        <div class="footer__icons">
-          <img src="/assets/icons/insta.svg" alt="icone instagram">
-          <img src="/assets/icons/tiktok.svg" alt="icone tik tok">
-          <img src="/assets/icons/mastodon.svg" alt="icone mastodon">
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
